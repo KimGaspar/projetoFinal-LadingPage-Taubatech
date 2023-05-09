@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Averta Std;
+  src: url(../fontes/AvertaStd-Bold.ttf);
+}
+
+:root {
+  --color-greyscale-gray900: #2f3542;
+  --color-primary: #2ed573;
+  --color-grayscale-gray100: #e7e8eb;
+  --color-primaryDark: #25aa5c;
+  --color-grayscale-gray800: #454b58;
+  --color-grayscale-gray700: #5c616e;
+  --color-primaryLight: #82e6ab;
+}
+
+header {
+  width: 100%;
+  background-image: url("../assets/bg_header.png");
+  background-color: var(--color-greyscale-gray900);
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.header-top img {
+  width: 200px;
+  height: 40px;
+}
+
+.header-top .navigation {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.header-top .navigation a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.navigation .active {
+  color: var(--color-primary) !important;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.navigation a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.first-fold {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 0px;
+  background-color: var(--color-greyscale-gray900);
+}
+
+.first-fold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header-image img {
+  width: 500px;
+  height: 400px;
+  margin-left: 115px;
+}
+
+.header-content .title-top {
+  color: var(--color-primary);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.title-icon {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title-icon .title {
+  font-family: "Averta Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.title-icon .icon {
+  display: flex;
+  width: 32px;
+  height: 32px;
+}
+
+.header-content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  width: 588px;
+  height: 64px;
+  color: var(--color-grayscale-gray100);
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.base-button {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  margin-top: 62px;
+  gap: 16px;
+}
+
+.base-button .primary {
+  display: flex;
+  width: 248px;
+  height: 48px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primaryDark);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: 1px solid var(--color-primaryDark);
+}
+
+.primary:hover {
+  background: #2ed573;
+}
+
+.base-button .secondary {
+  background: var(--color-greyscale-gray900);
+  border: 1px solid #2ed573;
+  border-radius: 4px;
+  width: 151px;
+  height: 48px;
+  padding: 12px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: var(--color-primary);
+}
+
+.secondary:hover {
+  color: #25aa5c;
+  border: 1px solid #25aa5c;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1900px;
+  background: var(--color-grayscale-gray800);
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.container-about .col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px;
+  gap: 16px;
+}
+
+.container-about .col-left img {
+  width: 160px;
+  height: 160px;
+  border-radius: 999px;
+  border: 4px solid var(--color-primary);
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title .name {
+  font-family: "Averta Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-primary);
+}
+.about-title .work {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grayscale-gray100);
+}
+
+.social-midia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-midia img:nth-child(1) {
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.social-midia img:nth-child(2) {
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.social-midia img:nth-child(3) {
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: -60px;
+}
+
+.col-right .title-body {
+  font-family: "Averta Std", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+}
+
+.col-right .title-body img {
+  width: 22px;
+  height: 22px;
+}
+
+.col-right .body {
+  width: 904px;
+  height: 168px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.welcome {
+  margin-top: 24px;
+  display: flex;
+  gap: 10px;
+}
+
+.welcome img {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  padding: 64px 0px;
+  background: var(--color-greyscale-gray900);
+}
+
+.skills .container-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.container-skills .skills-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.skills-top .title-skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.title-skills h2 {
+  font-family: "Averta Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.title-skills img {
+  width: 22px;
+  height: 22px;
+}
+
+.body-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.body-skills p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skills-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.skills-bottom .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+  background: var(--color-grayscale-gray800);
+  border: 2px solid #5c616e;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card:hover {
+  background: var(--color-greyscale-gray900);
+  border: 2px solid #82e6ab;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+/*project card css*/
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 0px;
+  background: var(--color-grayscale-gray800);
+  align-self: stretch;
+}
+
+.projects .projects-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.projects-container .project-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  width: 588px;
+  height: 256px;
+}
+
+.project-left .project-title h2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 588px;
+  height: 60px;
+  font-family: "Averta Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.project-left .project-title {
+  display: flex;
+  width: 24px;
+  gap: 10px;
+}
+
+.project-title img {
+  width: 24px;
+  height: 24px;
+}
+
+.project-left .project-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.projects-container .project-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 588px;
+  height: 256px;
+}
+
+.project-right .project-slide {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 588px;
+  height: 224px;
+}
+
+.project-slide .project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 24px;
+  background: var(--color-greyscale-gray900);
+  width: 280px;
+  height: 224px;
+  border: 1px solid var(--color-grayscale-gray700);
+  border-radius: 8px;
+}
+
+.project-card .project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-header .project-title h3 {
+  width: 248px;
+  height: 24px;
+  font-family: "Averta Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.project-header .project-description p {
+  width: 248px;
+  height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grayscale-gray100);
+}
+
+.project-header .project-skill {
+  display: flex;
+  gap: 8px;
+  width: 248px;
+  height: 24px;
+}
+
+.project-skill span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  border: 1px solid var(--color-primaryLight);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-primaryLight);
+}
+
+span:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.project-header .project-footer {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 48px;
+}
+
+.project-footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 4px;
+  border-radius: 4px;
+  background: var(--color-primaryDark);
+  color: #ffffff;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.project-footer button:hover {
+  background: #2ed573;
+}
+
+.project-header .description2 p {
+  font-size: 12px;
+}
+
+
