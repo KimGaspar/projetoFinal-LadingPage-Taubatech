@@ -17,6 +17,10 @@
   --color-grayscale-gray800: #454b58;
   --color-grayscale-gray700: #5c616e;
   --color-primaryLight: #82e6ab;
+ 
+}
+html{
+ scroll-behavior: smooth;
 }
 
 header {
@@ -245,28 +249,29 @@ header {
   color: var(--color-grayscale-gray100);
 }
 
-.social-midia {
+.container-about .social-midia {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  
 }
 
 .social-midia img:nth-child(1) {
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   border: none;
 }
 
 .social-midia img:nth-child(2) {
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   border: none;
 }
 
 .social-midia img:nth-child(3) {
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   border: none;
 }
 
@@ -488,6 +493,7 @@ header {
   gap: 24px;
   width: 588px;
   height: 224px;
+  
 }
 
 .project-slide .project-card {
@@ -500,6 +506,8 @@ header {
   height: 224px;
   border: 1px solid var(--color-grayscale-gray700);
   border-radius: 8px;
+  
+  
 }
 
 .project-card .project-header {
@@ -589,4 +597,32 @@ span:hover {
   font-size: 12px;
 }
 
+/*project slide bar css*/
+.project-right .slide-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 588px;
+  height: 8px;
+}
+
+.slide-bar .active {
+  width: 24px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+.slide-bar span {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--color-greyscale-gray900);
+  cursor: pointer;
+}
+
+.slide-bar span:hover{
+  background: var(--color-primary);
+}
 
