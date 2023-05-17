@@ -738,7 +738,7 @@ footer {
 }
 
 /*responsividade */
-@media  (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .header-top {
     padding: 60px;
   }
@@ -748,7 +748,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header-top {
     padding: 60px;
   }
