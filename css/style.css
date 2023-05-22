@@ -139,12 +139,12 @@ header .container {
 .title-icon .title {
   font-family: "Averta Std";
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 33px;
+  line-height: 50px;
   color: #ffffff;
 }
 
-.title-icon .icon {
+.title-icon .icon img{
   display: flex;
   width: 32px;
   height: 32px;
@@ -905,6 +905,7 @@ footer {
     padding: 60px;
   }
 
+  
   .header-image img {
     display: none;
   }
@@ -1029,6 +1030,11 @@ footer {
     padding: 60px;
   }
 
+  .header-content .title-icon .title{
+    font-size: 30px;
+  }
+
+ 
   .header-image img {
     display: none;
   }
@@ -1152,6 +1158,11 @@ footer {
   .header-content {
     padding: 60px;
   }
+
+  .header-content .title-icon .title{
+    font-size: 20px;
+  }
+
 
   .header-image img {
     display: none;
