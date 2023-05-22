@@ -183,6 +183,12 @@ header .container {
   text-transform: capitalize;
   color: #ffffff;
   border: 1px solid var(--color-primaryDark);
+  text-decoration: none;
+}
+
+.primary a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .primary:hover {
@@ -204,6 +210,12 @@ header .container {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
+}
+
+.secondary a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 .secondary:hover {
@@ -286,6 +298,7 @@ header .container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 10px;
 }
 
 .about .about-description .description-title {
@@ -581,6 +594,18 @@ header .container {
   background: var(--color-primary);
 }
 
+.project-card-footer button a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 24px;
+  transition: all 250ms linear 0s;
+}
+
 .project-card-skill span:hover {
   color: #ffffff;
   background: var(--color-primary);
@@ -643,7 +668,6 @@ header .container {
 .contact-left .list {
   display: flex;
   flex-direction: column;
-
 }
 
 .list ul li {
@@ -872,7 +896,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 992px) {
   .header-top {
     padding: 60px;
   }
